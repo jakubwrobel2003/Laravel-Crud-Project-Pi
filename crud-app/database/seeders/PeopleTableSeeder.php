@@ -17,6 +17,8 @@ class PeopleTableSeeder extends Seeder
                 'name' => $faker->firstName,
                 'lastname' => $faker->lastName,
                 'nr_phone'  => $faker->phoneNumber,
+                'street'  => $faker->street,
+                'country'=>$faker->country,
             ]);
         }
     }

@@ -6,6 +6,9 @@ $factory->define(App\Models\People::class, function (Faker $faker) {
         'name' => $faker->name,
         'lastname' => $faker->lastname,
         'phone' => $faker->phoneNumber,
+        'street'=> $faker->street_name,
+        'country'=>$faker->country
+
     ];
 });
 ?>
