@@ -23,3 +23,4 @@ Route::get('/wrobel/313080/people/{people}/edit',[PeopleController::class,'edit'
 Route::put('/wrobel/313080/people/{people}/update', [PeopleController::class, 'u'])->name('people.u');
 Route::delete('/wrobel/313080/people/{people}/delete', [PeopleController::class, 'delete'])->name('people.delete');
 
+Route::get('/wrobel/313080/people/showById', [PeopleController::class, 'showById'])->name('people.showById');

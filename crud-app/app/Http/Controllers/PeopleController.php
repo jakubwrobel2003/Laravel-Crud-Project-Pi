@@ -53,4 +53,12 @@ class PeopleController extends Controller
     
         return redirect()->route('people.index')->with('success', 'Person deleted');
     }
+
+    public function showById(Request $request)
+    {
+        $id = $request->input('id');
+        $person = People::find($id);
+
+        return view('wrobel.313080.people.show', ['person' => $person]);
+    }
 }
