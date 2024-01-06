@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PeopleController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/wrobel/313080/people/index',[PeopleController::class,'index'])->name('people.index');
+Route::get('/wrobel/313080/people/create',[PeopleController::class,'create'])->name('people.create');
+Route::post('/wrobel/313080/people/create',[PeopleController::class,'add'])->name('people.add');
+Route::get('/wrobel/313080/people/{people}/edit',[PeopleController::class,'edit'])->name('people.edit');
+Route::put('/wrobel/313080/people/{people}/update', [PeopleController::class, 'u'])->name('people.u');
+Route::delete('/wrobel/313080/people/{people}/delete', [PeopleController::class, 'delete'])->name('people.delete');
+
