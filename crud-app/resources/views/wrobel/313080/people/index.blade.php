@@ -7,6 +7,13 @@
 </head>
 <body>
    <h1>People</h1>
+   <form action="{{ route('people.showById') }}" method="get">
+        @csrf
+        <label for="id">ID:</label>
+        <input type="number" name="id" placeholder="Enter ID">
+        <button type="submit">Find by ID</button>
+    </form>
+
    <table border="1">
     <tr>
         <th>ID</th>
