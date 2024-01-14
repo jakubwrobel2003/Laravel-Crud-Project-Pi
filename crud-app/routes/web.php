@@ -20,7 +20,7 @@ Route::get('/wrobel/313080/people/index',[PeopleController::class,'index'])->nam
 Route::get('/wrobel/313080/people/create',[PeopleController::class,'create'])->name('people.create');
 Route::post('/wrobel/313080/people/create',[PeopleController::class,'add'])->name('people.add');
 Route::get('/wrobel/313080/people/{people}/edit',[PeopleController::class,'edit'])->name('people.edit');
-Route::put('/wrobel/313080/people/{people}/update', [PeopleController::class, 'u'])->name('people.u');
+Route::put('/wrobel/313080/people/{people}/update', [PeopleController::class, 'update'])->name('people.update');
 Route::delete('/wrobel/313080/people/{people}/delete', [PeopleController::class, 'delete'])->name('people.delete');
 
 Route::get('/wrobel/313080/people/showById', [PeopleController::class, 'showById'])->name('people.showById');
