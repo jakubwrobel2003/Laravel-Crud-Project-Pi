@@ -48,7 +48,7 @@ class PeopleController extends Controller
            return redirect(route('people.index'));
     }
     public function delete(People $people) {
-        // Logika usuwania rekordu
+      
         $people->delete();
     
         return redirect()->route('people.index')->with('success', 'Person deleted');
